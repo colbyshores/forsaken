@@ -221,7 +221,7 @@ static bool BSP_LoadPortals( char *fname )
 
 	if( Read_Size != File_Size ) return false;
 
-	Uint32Pnt = (u_int32_t *) Buffer;
+    Uint32Pnt = (u_int16_t *) Buffer;
 	MagicNumber = *Uint32Pnt++;
 	VersionNumber = *Uint32Pnt++;
 	Buffer = (char *) Uint32Pnt;
@@ -264,7 +264,7 @@ bool Bspload( char * Filename, BSP_HEADER *Bsp_Header )
 	char		*	OrgBuffer;
 	int16_t		*	int16_tpnt;
 	int16_t			i;
-	u_int32_t		*	Uint32Pnt;
+    u_int32_t		*	Uint32Pnt;
 	u_int32_t			MagicNumber;
 	u_int32_t			VersionNumber;
 
@@ -287,7 +287,7 @@ bool Bspload( char * Filename, BSP_HEADER *Bsp_Header )
 
 	if( Read_Size != File_Size ) return false;
 
-	Uint32Pnt = (u_int32_t *) Buffer;
+    Uint32Pnt = (u_int16_t *) Buffer;
 	MagicNumber = *Uint32Pnt++;
 	VersionNumber = *Uint32Pnt++;
 	Buffer = (char *) Uint32Pnt;

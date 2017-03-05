@@ -13,7 +13,7 @@
 // Globals
 //
 
-char pcmout[16*1024];
+char pcmout[16*4096];
 
 // this will eventually be removed but is required right now
 bool Sound3D;
